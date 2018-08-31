@@ -105,7 +105,6 @@ function displayMessage(message) {
   * Make sure player1 can only click botton holes and
   * player2 can only click top holes.
   * @param {integer} holeIndex - the hole to try
-  * @param {integer} player - the turn var
   * @return {bool}
   */
 function checkHoleSide(holeIndex){
@@ -252,6 +251,7 @@ for (var i = 0; i < 12; i++){
   document.getElementById('hole-' + hole)
     .addEventListener('click', function(event) {
       event.preventDefault();
+      //Once game end, display winner and the restart button
       if(gameEnd()){
         displayWinner();
       }
