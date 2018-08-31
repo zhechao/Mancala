@@ -5,8 +5,8 @@ div{
 #board{
   position: relative;
   border: 1px solid black;
-  width: 1200px;
-  height: 300px;
+  width: 1380px;
+  height: 370px;
 }
 
 .bank{
@@ -14,7 +14,9 @@ div{
   width: 150px;
   height: 300px;
   border: 1px solid #666;
+  border-radius: 12px;
   display: flex;
+  flex-flow: row wrap;
 }
 
 .hole{
@@ -22,83 +24,90 @@ div{
   width: 150px;
   height: 150px;
   border: 1px solid #666;
+  border-radius: 12px;
   display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
   cursor: pointer;
+
 }
 
 #bank-0{
-  left:1050px;
-  top:0;
+  left:1170px;
+  top:35px;
 }
 
 #bank-1{
-  left:0;
-  top:0;
+  left:50px;
+  top:35px;
 }
 
 #hole-11{
-  left:150px;
-  top:0;
+  left:210px;
+  top:30px;
 }
 
 #hole-10{
-  left:300px;
-  top:0;
+  left:370px;
+  top:30px;
 }
 
 #hole-9{
-  left:450px;
-  top:0;
+  left:530px;
+  top:30px;
 }
 
 #hole-8{
-  left:600px;
-  top:0;
+  left:690px;
+  top:30px;
 }
 
 #hole-7{
-  left:750px;
-  top:0;
+  left:850px;
+  top:30px;
 }
 
 #hole-6{
-  left:900px;
-  top:0;
+  left:1010px;
+  top:30px;
 }
 
 #hole-5{
-  left:900px;
-  top:150px;
+  left:1010px;
+  top:190px;
 }
 
 #hole-4{
-  left:750px;
-  top:150px;
+  left:850px;
+  top:190px;
 }
 
 #hole-3{
-  left:600px;
-  top:150px;
+  left:690px;
+  top:190px;
 }
 
 #hole-2{
-  left:450px;
-  top:150px;
+  left:530px;
+  top:190px;
 }
 
 #hole-1{
-  left: 300px;
-  top: 150px;
+  left: 370px;
+  top: 190px;
 }
 
 #hole-0{
-  left: 150px;
-  top:150px;
+  left: 210px;
+  top:190px;
 }
 
 .pebble{
+
   width:20px;
   height:20px;
+  margin: 5px;
   border-radius: 10px;
   border: 1px soild #444;
   background-color: red;

@@ -227,7 +227,13 @@ function makeMove(holeIndex){
     var lastHole = putPebbles(holeIndex,pebble);
     //Once the last hole was empty
     if(board[lastHole] === 1 && checkHoleSide(lastHole) && player === turn){
-      specialCase(lastHole, player);
+      setTimeout(function(){
+        specialCase(lastHole, player);
+        removePebble();
+        displayPebble();
+        displayBank();
+        displayTurn();
+      }, 500);
     }
     turn = (turn + 1) % 2;
     displayTurn();
@@ -255,6 +261,5 @@ for (var i = 0; i < 12; i++){
         displayPebble();
         displayBank();
       }
-
     });
 }
