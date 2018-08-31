@@ -1,0 +1,105 @@
+div{
+  box-sizing: border-box;
+}
+
+#board{
+  position: relative;
+  border: 1px solid black;
+  width: 1200px;
+  height: 300px;
+}
+
+.bank{
+  position: absolute;
+  width: 150px;
+  height: 300px;
+  border: 1px solid #666;
+  display: flex;
+}
+
+.hole{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #666;
+  display: flex;
+  cursor: pointer;
+}
+
+#bank-0{
+  left:1050px;
+  top:0;
+}
+
+#bank-1{
+  left:0;
+  top:0;
+}
+
+#hole-11{
+  left:150px;
+  top:0;
+}
+
+#hole-10{
+  left:300px;
+  top:0;
+}
+
+#hole-9{
+  left:450px;
+  top:0;
+}
+
+#hole-8{
+  left:600px;
+  top:0;
+}
+
+#hole-7{
+  left:750px;
+  top:0;
+}
+
+#hole-6{
+  left:900px;
+  top:0;
+}
+
+#hole-5{
+  left:900px;
+  top:150px;
+}
+
+#hole-4{
+  left:750px;
+  top:150px;
+}
+
+#hole-3{
+  left:600px;
+  top:150px;
+}
+
+#hole-2{
+  left:450px;
+  top:150px;
+}
+
+#hole-1{
+  left: 300px;
+  top: 150px;
+}
+
+#hole-0{
+  left: 150px;
+  top:150px;
+}
+
+.pebble{
+  width:20px;
+  height:20px;
+  border-radius: 10px;
+  border: 1px soild #444;
+  background-color: red;
+}
