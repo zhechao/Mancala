@@ -28,9 +28,8 @@ div{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   cursor: pointer;
-
 }
 
 #bank-0{
@@ -104,10 +103,11 @@ div{
 }
 
 .pebble{
-
   width:20px;
   height:20px;
-  margin: 5px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 10px;
   border: 1px soild #444;
   background-color: red;
